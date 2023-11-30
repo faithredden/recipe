@@ -74,36 +74,10 @@ input{
     font-size: 16px;
     font-weight: bold;
 }
-header{
-    text-align: center;
-}
-menu{
-    display:flex;
-    justify-content: space-around;
-    padding-top:150px
-}
-menu li{
-    display:inline-block;
-}
-menu a {
-    text-decoration: none;
-    color:#EB5428;
-    
-}
-menu span, menu a{
-    display:block;
-    text-align: center;
 
-}
-.street-tacos img{
-width: 414px;
-}
-nav{
-    position:absolute;
-    top:0%;
-}
 
-/*-------menu-------*/
+
+/*-------navigation menu-------*/
 nav ul{
     background-color: black;
     overflow: hidden;
@@ -115,9 +89,14 @@ nav ul{
 label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;
+    padding: 10px;
     position: relative;
     user-select: none;
+    background: white;
+    position:absolute;
+    top:0%;
+    width:70px;
+    box-shadow: 0px 3px  rgba(0,0,0,.15);
 }
 label span, label svg{
     display: block;
@@ -168,26 +147,34 @@ nav a img, nav a{
 }  
 /*---------------------*/
 /*text*/
-
+nav{
+    position:absolute;
+    top:0%;
+}
 #logo{
 position: absolute;
 top:0%;
+left:54%;
 background:#EB5428;
-width:200px;
-padding:8px;
-justify-content: center;
+width:216px;
+padding: 9px;
+}
+#logo svg{
+    width:70%;
 }
 #avatar{
 position: absolute;
 top:0%;
+left:195%;
 background:#ffffff;
-width:80px;
-padding:8px;
+width:70px;
+padding:10px;
 color: black;
-justify-content: end;
+box-shadow: 0px 3px  rgba(0,0,0,.15);
 }
 #avatar svg{
-    stroke:#EB5428
+    stroke:#EB5428;
+    width:100%
 }
 #avatar , #avatar svg{
     display:block
@@ -197,7 +184,32 @@ justify-content: end;
     display:inline
 }
 header{
-    background:#f2f2f2;
+    position: absolute;
+    top:25%;
+    left:32%;
+    line-height: .5em;
+}
+menu{
+    display:flex;
+    justify-content: space-around;
+    padding-top:230px
+}
+menu li{
+    display:inline-block;
+    padding-right:30px;
+}
+menu a {
+    text-decoration: none;
+    color:#EB5428;
+    
+}
+menu span, menu a{
+    display:block;
+    text-align: center;
+
+}
+.street-tacos img{
+width: 414px;
 }
 
 .timedetails h2 {
@@ -277,7 +289,12 @@ form input{
     border-color: #EB5428;
     border-width:2px;
 }
-
+form{
+    display: flex;
+    position: absolute;
+    top:16%;
+    left:22%
+}
 
 
 

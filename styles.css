@@ -103,7 +103,7 @@ nav{
     top:0%;
 }
 
-/*menu*/
+/*-------menu-------*/
 nav ul{
     background-color: black;
     overflow: hidden;
@@ -186,8 +186,9 @@ nav a img, nav a{
         display: none;
     }
 }  
-
+/*---------------------*/
 /*text*/
+
 #logo{
 position: absolute;
 top:0%;

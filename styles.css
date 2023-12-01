@@ -173,15 +173,15 @@ box-shadow: 0px 3px  rgba(0,0,0,.15);
     display:inline
 }
 header{
-    position: absolute;
-    top:25%;
-    left:32%;
+    position: relative;
+    top:175px;
+    left:110px;
     line-height: .5em;
 }
 menu{
     display:flex;
     justify-content: space-around;
-    padding-top:230px
+    padding-top:170px
 }
 menu li{
     display:inline-block;
@@ -301,9 +301,9 @@ form input{
 }
 form{
     display: flex;
-    position: absolute;
-    top:16%;
-    left:22%
+    position: relative;
+    top:-2930px;
+    left:55px
 }
 
 #socials h2{
@@ -387,16 +387,37 @@ footer p{
 
 
 
-/*@media screen and (min-width:1200px) {
+/*@media screen and (min-width:768px) {
+    nav{
+        width:640px;
+        padding-bottom:15px;
+        
+    }
+    
     nav ul {
         overflow: visible;
         position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        top:0%;
+     display: flex;
+        
     
     }
-    label span, input {
+    #avatar {
+        position:absolute;
+        top:0%;
+        left:678px;
+        
+        
+    }
+    label span, input, label {
         display: none;
     }
-}  
+    body{
+        width:768px;
+    }
+    #logo{
+        right:500px;
+        width:60px;
+        padding:0px;
+        
+    }

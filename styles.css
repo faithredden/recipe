@@ -1,12 +1,5 @@
 /*font styles*/
-html{
-    background-color: rgba(122,191,191,.5);
-}
-body{
-    width: 414px;
-    margin:0 auto;
-    background:#f2f2f2 ;
-}
+
 h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size:40px;
@@ -31,13 +24,14 @@ menu li{
     font-family: 'Bebas Neue', sans-serif;
     font-size:20px;
 }
-footer{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size:20px;
-}
+
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+}
+footer{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:20px;
 }
 dd{
     font-family: 'Montserrat', sans-serif;
@@ -132,21 +126,16 @@ nav a img, nav a{
     display:inline;
 }
 
-@media screen and (min-width:1200px) {
-    nav ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-    }
-    label span, input {
-        display: none;
-    }
-}  
 /*---------------------*/
 /*text*/
+html{
+    background-color: rgba(122,191,191,.5);
+}
+body{
+    width: 414px;
+    margin:0 auto;
+    background:#f2f2f2 ;
+}
 nav{
     position:absolute;
     top:0%;
@@ -211,9 +200,20 @@ menu span, menu a{
 .street-tacos img{
 width: 414px;
 }
-
+.street-tacos p{
+    padding:0px 10px;
+}
 .timedetails h2 {
     text-align: center;
+}
+.timedetails dl{
+    display:block;
+    padding:10px;
+}
+.timedetails dt{
+    float:left;
+    width:100px;
+    clear:left;
 }
 
 .ingredients h2{ 
@@ -247,9 +247,11 @@ width: 414px;
 }
 .side-dishes h2{
     text-align: center;
+    padding-top:10px;
 }
 .side-dishes img{
     width:110px;
+    padding-top:12px;
 }
 .side-dishes section{
     padding:10px;
@@ -271,11 +273,19 @@ width: 414px;
     grid-column: 2 /3;
     grid-row: 2 / 3;
 }
-
+.side-dishes dt{
+    line-height:.5em
+}
+.side-dishes dd{
+    line-height:2.5em;
+    margin-left: 0;
+    
+}
 .side-dishes .star{
     grid-column:2 / 3;
     grid-row:3 / 4;
 }
+
 nav h2{
     visibility: hidden;
 }
@@ -296,6 +306,43 @@ form{
     left:22%
 }
 
+#socials h2{
+    display: none;
+}
+#socials li{
+    list-style-type:none;
+}
+#socials a{
+    text-decoration: none;
+    padding:15px;
+    color: #eb5428;
+}
+#socials svg{
+    width:100%;    
+}
+#socials a, #socials svg{
+    display:block;  
+}
+#socials ul{
+    display:flex;
+    margin:0 auto;   
+}
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+footer img{
+    width:120px;
+    margin:0 auto;
+    grid-row:1/2;
+}
+footer p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:20px;
+    text-align: center;
+    grid-row: 2 /3;  
+}
 
 
 
@@ -336,3 +383,20 @@ form{
 
 
 
+
+
+
+
+/*@media screen and (min-width:1200px) {
+    nav ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    }
+    label span, input {
+        display: none;
+    }
+}  

@@ -1,3 +1,29 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
 /*font styles*/
 
 h1{
@@ -143,10 +169,10 @@ nav{
 #logo{
 position: absolute;
 top:0%;
-left:54%;
+left:90px;
 background:#EB5428;
-width:216px;
-padding: 9px;
+width:215px;
+padding: 10px;
 }
 #logo svg{
     width:70%;
@@ -154,7 +180,7 @@ padding: 9px;
 #avatar{
 position: absolute;
 top:0%;
-left:195%;
+left:324px;
 background:#ffffff;
 width:70px;
 padding:10px;
@@ -174,18 +200,18 @@ box-shadow: 0px 3px  rgba(0,0,0,.15);
 }
 header{
     position: relative;
-    top:175px;
+    top:190px;
     left:110px;
     line-height: .5em;
 }
 menu{
     display:flex;
     justify-content: space-around;
-    padding-top:170px
+    padding-top:220px;
+    padding-bottom: 10px;
 }
 menu li{
     display:inline-block;
-    padding-right:30px;
 }
 menu a {
     text-decoration: none;
@@ -201,10 +227,11 @@ menu span, menu a{
 width: 414px;
 }
 .street-tacos p{
-    padding:0px 10px;
+    padding:10px 10px;
 }
 .timedetails h2 {
     text-align: center;
+    padding-top:10px;
 }
 .timedetails dl{
     display:block;
@@ -220,8 +247,11 @@ width: 414px;
     text-align:center;
     
 }
+.ingredients ul{
+    padding:20px;
+}
 .ingredients li{
-    padding:10px;
+    padding:5px;
 }
 .ingredients li:first-child{
     padding-top:0px;
@@ -231,6 +261,9 @@ width: 414px;
 }
 .directions h2 {
     text-align: center;
+}
+.directions ol{
+    padding:20px;
 }
 .directions li{
     padding:10px;
@@ -250,14 +283,15 @@ width: 414px;
     padding-top:10px;
 }
 .side-dishes img{
-    width:110px;
+    width:100px;
     padding-top:12px;
 }
 .side-dishes section{
     padding:10px;
     display: grid;
-    grid-template-columns: 130px auto;
-    grid-template-rows: 40px 60px 30px
+    grid-template-columns: 110px auto;
+    grid-template-rows: 40px 60px 30px;
+    width:375px;
     
 }
 .side-dishes img{
@@ -267,15 +301,12 @@ width: 414px;
 .side-dishes h3{
   grid-column: 2 /3;
  grid-row:1 / 2;
- line-height:0;
 }
 .side-dishes dl{
     grid-column: 2 /3;
     grid-row: 2 / 3;
 }
-.side-dishes dt{
-    line-height:.5em
-}
+
 .side-dishes dd{
     line-height:2.5em;
     margin-left: 0;
@@ -287,6 +318,9 @@ width: 414px;
 }
 
 nav h2{
+    visibility: hidden;
+}
+#id span{
     visibility: hidden;
 }
 form svg{
@@ -302,7 +336,7 @@ form input{
 form{
     display: flex;
     position: relative;
-    top:-2930px;
+    top:-2720px;
     left:55px
 }
 
@@ -311,17 +345,21 @@ form{
 }
 #socials li{
     list-style-type:none;
+    width:768px;
 }
 #socials a{
     text-decoration: none;
-    padding:15px;
+    padding-right:20px;
+    padding-left: 20px;
+    padding-bottom:15px;
     color: #eb5428;
 }
 #socials svg{
     width:100%;    
 }
 #socials a, #socials svg{
-    display:block;  
+    display:block; 
+    text-align: center; 
 }
 #socials ul{
     display:flex;
@@ -341,83 +379,107 @@ footer p{
     font-family: 'Bebas Neue', sans-serif;
     font-size:20px;
     text-align: center;
-    grid-row: 2 /3;  
+    grid-row: 2 /3;
+    padding:20px;  
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@media screen and (min-width:768px) {
-    nav{
-        width:640px;
-        padding-bottom:15px;
-        
-    }
-    
-    nav ul {
-        overflow: visible;
-        position: absolute;
-        top:0%;
-     display: flex;
-        
-    
-    }
-    #avatar {
-        position:absolute;
-        top:0%;
-        left:678px;
-        
-        
-    }
-    label span, input, label {
-        display: none;
-    }
+@media screen and (min-width:768px){
     body{
         width:768px;
     }
-    #logo{
-        right:500px;
-        width:60px;
-        padding:0px;
-        
+    header{
+        left:20px;
     }
+    form{
+        top:-2540px;
+        left:450px;
+    }
+    .street-tacos img{
+        width:768px;
+    }
+    .timedetails dl{
+        width: 260px;
+        margin: auto;
+        text-align: center;
+    }
+    .ing-details{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .ing-details h2{
+        padding-top:10px;
+    }
+  
+    .side-dishes{
+        display:grid;
+        grid-template-rows:auto auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .side-dishes h2{
+        grid-column: 1 / 3;
+        grid-row:1 / 2;
+    }
+    #socials{
+        width:400px;
+        float:right;
+    }
+    
+}
+
+@media screen and (min-width:1280px){
+    body{
+        width:1280px;
+    }
+    header{
+        text-align: center;
+    }
+    form{
+        top:-2200px;
+        left:900px;
+    }
+    .street-tacos img{
+        float:left;
+        width:600px;
+        padding:20px;
+    }
+   
+    .timedetails{
+        clear:both;
+        background:black;
+        color:#7abfbf;
+    }
+    .side-dishes section{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4,auto);
+    }
+    .side-dishes img{
+        grid-row:1 /2;
+        grid-column: 1 / 2;
+        width: 200px;
+    }
+    .side-dishes h3{
+        grid-row:2/3;
+        grid-column: 1 / 2;
+    }
+
+    .side-dishes dl{
+        grid-row:3/4;
+        grid-column: 1 / 2;
+    }
+    .side-dishes .star{
+        grid-row:4/5;
+        grid-column: 1 / 2;
+    }
+    .side-dishes{
+        display: grid;
+        grid-template-columns: repeat(4,320px);
+        grid-template-rows: auto auto;
+    }
+    .side-dishes h2{
+        grid-row:1 /2;
+        grid-column: 1 / 5;
+    }
+        
+}
